@@ -1,0 +1,817 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url(../public/img/fon.jpg);
+    font-family: Helvetica;
+    
+}
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: red;
+}
+
+.header {
+    width: 100%;
+    height: 165px;
+    background-color: white;
+    background: rgba(28, 28, 28, 0.8);
+
+}
+
+a.order:hover{
+    color: black;
+}
+a.logo {
+    color: white;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.logotip {
+    display: flex;
+    list-style-type: none;
+}
+
+a.logo:hover {
+    color: red;
+}
+
+.conteiner {
+    width: 1000px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list {
+    display: flex;
+    width: auto;
+    margin-left: auto;
+    margin-top: 11px;
+    font-size: 25px;
+}
+
+.list_word {
+    margin-left: 5px;
+}
+
+.contact_number {
+    
+    margin-left: auto;
+    margin-top: 24px;
+    padding-right: 15px;
+}
+
+a.list {
+    color: rgb(151, 151, 151);
+    font-weight: bolder;
+}
+
+a.list:hover {
+    color: red;
+}
+.flex{
+    display: flex;
+}
+a.cont_num {
+    color: white;
+}
+
+a.cont_num:hover {
+    color: red;
+}
+
+.contact_number_info {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-top: 25px;
+    text-align: center;
+    font-size: small;
+    border-radius: 100%;
+    background-color: purple;
+
+}
+.text_vape_menuu {
+    color: white;
+    height: 25px;
+    width: 230px;
+    padding-left: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.text_vape_menuu:hover {
+    background-color: yellow;
+    color: black;
+
+}
+
+
+
+input.search {
+    width: 89%;
+    border-radius: 50px;
+    border: 0;
+    background-color: rgb(236, 236, 236);
+    height: 40px;
+
+}
+
+input.search:focus {
+    border: 0px;
+    outline: none;
+    font-size: 20px;
+
+}
+
+.nev {
+    margin-top: 30px;
+}
+
+.search {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 50px;
+    border: 1px solid black;
+    font-size: 20px;
+
+}
+
+input.btn_search {
+    border-radius: 50px;
+    border: none;
+    width: 110px;
+    height: 47px;
+    background-color: rgb(255, 255, 0);
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.btn_search:hover {
+    background-color: red;
+    color: white;
+}
+
+.garant {
+    color: white;
+    margin-top: 50px;
+}
+
+.garant_block {
+    width: 100%;
+    height: auto;
+    background-color: #292929;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.garant_conteiner {
+    width: 950px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text {
+    color: yellow;
+}
+
+.block_aut-reg {
+    display: flex;
+}
+
+form.aut {
+    display: block;
+    width: 45%;
+    height: 385px;
+    background-color: #292929;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input.reg-aut {
+    width: 100%;
+    height: 35px;
+    background-color: #292929;
+    border: 1px solid gray;
+    border-radius: 50px;
+    color: white;
+    margin-top: 5px;
+}
+
+.label_input {
+    margin-top: 20px;
+}
+
+input.btn_aut {
+    height: 35px;
+    width: 100px;
+    background-color: yellow;
+    border: 0;
+    border-radius: 50px;
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+input.btn_aut:hover {
+    background-color: red;
+    color: white;
+}
+
+.form_conteiner {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+label.aut-reg {
+    color: white;
+}
+
+.logo_aut-reg {
+    width: 400px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reg {
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+form.reg {
+    display: none;
+    width: 45%;
+    height: 570px;
+    background-color: #292929;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn_reg {
+    height: 35px;
+    width: 150px;
+    background-color: yellow;
+    border: 0;
+    border-radius: 50px;
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+a.vhod {
+    text-decoration: underline;
+}
+
+form.profile {
+    display: block;
+    width: 45%;
+    height: 570px;
+    background-color: #292929;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form.admin_menu {
+    display: block;
+    width: 45%;
+    height: 570px;
+    background-color: #292929;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.privilegion {
+    display: flex;
+    margin-top: 20px;
+}
+
+form.add_tovars {
+    display: block;
+    width: 100%;
+    height: 570px;
+    background-color: #292929;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input.add_price::-webkit-outer-spin-button,
+input.add_price::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+}
+
+.cont_tovar {
+    display: flex;
+    margin-left: auto;
+}
+
+.cont_full {
+    display: flex;
+}
+
+textarea.description {
+    width: 250px;
+    height: 300px;
+    resize: none;
+    font-size: 15px;
+    background-color: #292929;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: white;
+}
+
+.add_input {
+    margin-left: 30px;
+}
+
+input.add_input,
+.add_cout,
+.add_price,
+.add_name {
+    font-size: 15px;
+    background-color: #292929;
+    border: 1px solid gray;
+    border-radius: 4px;
+    color: white;
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.cont_vape {
+    display: flex;
+}
+
+form.vape_menu {
+    width: 250px;
+    height: 300px;
+    background-color: #292929;
+    color: white;
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.text_vape_menu {
+    color: white;
+    height: 25px;
+    width: 230px;
+    padding-left: 20px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.text_vape_menu:hover {
+    background-color: yellow;
+    color: black;
+
+}
+
+form.form_shoping {
+    width: 751px;
+    height: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.tovars {
+    width: 229px;
+    background-color: #292929;
+    height: 350px;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+
+
+img.tovars_foto {
+    width: 220px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+
+form.podiki {
+    display: none;
+    flex-wrap: wrap;
+
+}
+
+form.single {
+    display: none;
+    flex-wrap: wrap;
+}
+
+form.goo {
+    display: none;
+    flex-wrap: wrap;
+}
+
+.info_tovars {
+    width: 100%;
+    height: 700px;
+    background-color: #292929;
+    border-radius: 4px;
+    color: white;
+    margin-top: 30px;
+}
+
+
+
+.cont_tovars {
+    width: 95%;
+    height: 700px;
+    padding: 3%;
+}
+
+.flex_co {
+    display: flex;
+}
+
+img.foto_tovar {
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+}
+
+.info {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+}
+
+form.poocupka {
+    width: 300px;
+    height: 300px;
+    background-color: #292929;
+    border: 1px solid gray;
+    margin-left: 20px;
+    border-radius: 4px;
+}
+
+input.cout_tovar {
+    background-color: #393939;
+    border: 0;
+    color: white;
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.aut_text {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+input.btn_shoping {
+    width: 250px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: yellow;
+    color: black;
+    border-radius: 100px;
+    border: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input.btn_shoping:hover {
+    background-color: red;
+    color: white;
+}
+
+.in {
+    width: 250px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.number {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+}
+
+.number input[type="number"] {
+    display: block;
+    height: 40px;
+    line-height: 32px;
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
+}
+
+.number input[type="number"]::-webkit-outer-spin-button,
+.number input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.number-minus {
+    position: absolute;
+    top: 27px;
+    left: 15px;
+    bottom: 1px;
+    width: 20px;
+    height: 20px;
+    background-color: #393939;
+    color: white;
+    padding: 0;
+    border: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.number-plus {
+    position: absolute;
+    top: 30px;
+    right: 1px;
+    bottom: 1px;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: #393939;
+    padding: 0;
+    border: none;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cars {
+    width: 100%;
+    height: auto;
+    background-color: #292929;
+    color: white;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+
+.cars_block {
+    border: 1px solid gray;
+    display: flex;
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+img.img_cars {
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+}
+
+.tovar_name {
+    width: 400px;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.tovar_price {
+    width: 80px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.tovar_cout {
+
+    margin-left: 150px;
+}
+
+.del {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+}
+
+.flex_cars {
+    display: flex;
+}
+
+.tovar_n {
+    margin-left: 200px;
+}
+
+.tovar_p {
+    margin-left: 185px;
+}
+
+.tovar_i {
+    margin-left: 107px;
+}
+
+.sum {
+    display: flex;
+    margin-top: 30px;
+}
+
+input.btn_bron {
+    border: 0;
+    border-radius: 4px;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    background-color: yellow;
+    color: black;
+}
+
+input.btn_bron:hover {
+    background-color: red;
+    color: white;
+}
+
+
+table.tabl {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    background-color: #292929;
+    margin-top: 30px;
+    color: white;
+
+}
+table.tab {
+    border: 1px solid grey;
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    background-color: #292929;
+    color: white;
+
+}
+
+th {
+    border: 1px solid grey;
+}
+
+td {
+    border: 1px solid grey;
+    width: 50%;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+td.tdd{
+    border: 1px solid grey;
+    width: 50%;
+    height: 30px;
+    text-align: center;
+}
+
+td.rigth {
+    text-align: right;
+}
+
+
+td.order_tovar {
+    text-align: center;
+    width: 70%;
+    background-color: #181818;
+}
+td.order_price {
+    text-align: center;
+    background-color: #181818;
+}
+td.order_cout {
+    text-align: center;
+    background-color: #181818;
+}
+td.order_all_cout {
+    text-align: center;
+    background-color: #181818;
+}
+
+
+
+img.foto_order {
+    width: 100px;
+    border-radius: 4px;
+}
+
+input.order{
+    width: 200px;
+    height: 25px;
+    border: 0;
+    background-color: #393939;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+form.order{
+    width: 600px;
+    height: 200px;
+    background-color: #292929;
+    border-radius: 4px;
+}
+input.btn_order{
+    width: 200px;
+    height: 30px;
+    background-color: yellow;
+    color: black;
+    border-radius: 4px;
+    font-size: 20px;
+}
+input.btn_order:hover{
+    background-color: red;
+    color: white;
+}
+.result{
+    width: 100%;
+    height: auto;
+    background-color: #292929;
+    border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+img.order-foto{
+    width: 100px;
+    border-radius: 4px;
+}
+img.big-foto{
+    width: 100%;
+    margin-top: 30px;
+}
+.bloc{
+    width: 100%;
+    height: auto;
+    background-color: #292929;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 30px;
+}
+.flex-red{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+a.del{
+    margin-left: 20px;  
+}
+
+
+
