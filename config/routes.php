@@ -25,5 +25,6 @@ $routes = [
     'update' => 'update.php',
     'update_tovar' => 'update_tovar.php',
     'del' => 'del.php',
+    'search' => 'search.php',
 
 ];

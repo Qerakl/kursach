@@ -28,13 +28,21 @@
                 <form class="form_shoping" id="shoping">
 
                     <div class="tovars" onclick="OpenFormSingle()" style="cursor: pointer;">
-                        <h2>Одноразоввые вейпы</h2>
+                        <div class="tovar_cat">
+                            <h2>Одноразоввые вейпы</h2>
+                        </div>
                     </div>
                     <div class="tovars" onclick="OpenFormPod()" style="cursor: pointer;">
-                        <h2>POD-система</h2>
+                        <div class="tovar_cat">
+                            <h2>POD-система</h2>
+                        </div>
+
                     </div>
                     <div class="tovars" onclick="OpenFormGoo()" style="cursor: pointer;">
-                        <h2>Жижа</h2>
+                        <div class="tovar_cat">
+                            <h2>Жижа</h2>
+                        </div>
+
                     </div>
 
 
@@ -52,89 +60,94 @@
                         foreach ($result as $row) {
                             ?>
 
-                            <a href="/info-tovars?id=<?php echo $row["id"]?>"">
-                            <div class="tovars">
+                            <a href="/info-tovars?id=<?php echo $row["id"] ?>"">
+                            <div class=" tovars">
                                 <img class="tovars_foto" src="../public/img/<?php echo $row["img"] ?>">
                                 <?php echo $row["name"] ?>
-                                <h3>
-                                    <?php echo $row["price"] . " Рублей" ?>
-                                </h3>
-                            </div>
-                            </a>
+                                <div class="price">
+
+                                    <h3>
+                                        <?php echo $row["price"] . " Рублей" ?>
+                                    </h3>
+                                </div>
+                    </div>
+                    </a>
 
 
 
-                            <?php
-                        }
-                    }
-
-
-                    ?>
-                </form>
-
-                <form action="info-tovars" class="single" id="single" method="get">
                     <?php
-                    $conn = new PDO("mysql:host=localhost;dbname=vapeshop;", "root", "");
-                    $getUser = "SELECT * FROM `tovar` WHERE category='single'";
-
-                    $result = $conn->prepare($getUser);
-
-                    $result->execute();
-                    if ($result->rowCount() > 0) {
-                        foreach ($result as $row) {
-                            ?>
-
-                            <a href="/info-tovars?id=<?php echo $row["id"]?>"">
-                            <div class="tovars">
-                                <img class="tovars_foto" src="../public/img/<?php echo $row["img"] ?>">
-                                <?php echo $row["name"] ?>
-                                <h3>
-                                    <?php echo $row["price"] . " Рублей" ?>
-                                </h3>
-                            </div>
-                            </a>
-
-
-
-                            <?php
                         }
                     }
 
 
                     ?>
-                </form>
+            </form>
 
-                <form action="" class="goo" id="goo" method="get">
+            <form action="info-tovars" class="single" id="single" method="get">
+                <?php
+                $conn = new PDO("mysql:host=localhost;dbname=vapeshop;", "root", "");
+                $getUser = "SELECT * FROM `tovar` WHERE category='single'";
+
+                $result = $conn->prepare($getUser);
+
+                $result->execute();
+                if ($result->rowCount() > 0) {
+                    foreach ($result as $row) {
+                        ?>
+
+                        <a href="/info-tovars?id=<?php echo $row["id"] ?>"">
+                            <div class=" tovars">
+                            <img class="tovars_foto" src="../public/img/<?php echo $row["img"] ?>">
+                            <?php echo $row["name"] ?><br>&nbsp;<br>&nbsp;
+                            <h3>
+                                <?php echo $row["price"] . " Рублей" ?>
+                            </h3>
+                </div>
+                </a>
+
+
+
+                <?php
+                    }
+                }
+
+
+                ?>
+        </form>
+
+        <form action="" class="goo" id="goo" method="get">
+            <?php
+            $conn = new PDO("mysql:host=localhost;dbname=vapeshop;", "root", "");
+            $getUser = "SELECT * FROM `tovar` WHERE category='goo'";
+
+            $result = $conn->prepare($getUser);
+
+            $result->execute();
+            if ($result->rowCount() > 0) {
+                foreach ($result as $row) {
+                    ?>
+
+                    <a href="/info-tovars?id=<?php echo $row["id"] ?>">
+                        <div class="tovars">
+                            <img class="tovars_foto" src="../public/img/<?php echo $row["img"] ?>">
+                            <?php echo $row["name"] ?><br>&nbsp;<br>&nbsp;
+                            <h3>
+                                <?php echo $row["price"] . " Рублей" ?>
+                            </h3>
+                        </div>
+                    </a>
+
+
+
                     <?php
-                    $conn = new PDO("mysql:host=localhost;dbname=vapeshop;", "root", "");
-                    $getUser = "SELECT * FROM `tovar` WHERE category='goo'";
-
-                    $result = $conn->prepare($getUser);
-
-                    $result->execute();
-                    if ($result->rowCount() > 0) {
-                        foreach ($result as $row) {
-                            ?>
-
-                            <a href="/info-tovars?id=<?php echo $row["id"]?>"><div class="tovars">
-                                <img class="tovars_foto" src="../public/img/<?php echo $row["img"] ?>">
-                                <?php echo $row["name"] ?>
-                                <h3>
-                                    <?php echo $row["price"] . " Рублей" ?>
-                                </h3>
-                            </div></a>
+                }
+            }
 
 
-
-                            <?php
-                        }
-                    }
-
-
-                    ?>
-                </form>
-            </div>
-        </div>
+            ?>
+        </form>
+    </div>
+    </div>
 </main>
 <footer></footer>
 
@@ -143,19 +156,19 @@
     let formShoping = document.getElementById('shoping');
     let formSingle = document.getElementById('single');
     let formGoo = document.getElementById('goo');
-    function OpenFormPod(){
+    function OpenFormPod() {
         formPod.style.display = "flex";
         formShoping.style.display = "none";
         formSingle.style.display = "none";
         formGoo.style.display = "none";
     }
-    function OpenFormSingle(){
+    function OpenFormSingle() {
         formSingle.style.display = "flex";
         formShoping.style.display = "none";
         formPod.style.display = "none";
         formGoo.style.display = "none";
     }
-    function OpenFormGoo(){
+    function OpenFormGoo() {
         formSingle.style.display = "none";
         formShoping.style.display = "none";
         formPod.style.display = "none";

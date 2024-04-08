@@ -390,6 +390,7 @@ form.vape_menu {
     padding-left: 20px;
     padding-top: 10px;
     cursor: pointer;
+    
 }
 
 .text_vape_menu:hover {
@@ -415,6 +416,14 @@ form.form_shoping {
     margin-left: 20px;
     margin-top: 20px;
     border-radius: 4px;
+}
+.tovar_cat {
+    width: 190px;
+    height: 50px;
+    margin-top: 150px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -501,6 +510,18 @@ input.cout_tovar {
     font-size: 15px;
     margin-top: 10px;
     width: 300px;
+}
+.price_pod{
+    margin-top: 100px;
+   
+}
+.price_pod{
+    margin-top: 100px;
+   
+}
+.price_pod{
+    margin-top: 100px;
+   
 }
 
 input.btn_shoping {
@@ -813,5 +834,16 @@ a.del{
     margin-left: 20px;  
 }
 
+.contact{
+    width: 400px;
+    font-size: 20px;
+    height: 400px;
+    background-color: #292929;
+    color: white;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
 

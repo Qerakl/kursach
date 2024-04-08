@@ -185,7 +185,27 @@ class Db
         $this->conn->exec($sql);
         header("Location: /");
     }
-    
-    
+    public function search_tovar($name)
+    {
+        
+            $getUser = "SELECT * FROM `tovar` WHERE `name`='$name'";
 
+            $result = $this->conn->prepare($getUser);
+
+            $result->execute();
+            if ($result->rowCount() > 0) {
+                foreach ($result as $row) {
+                    header("Location: /info-tovars?id=" . $row["id"]);
+                }
+            }else{
+                abort();
+            }
+            
+        
+        
+            
+              
+    }
+
+   
 }
