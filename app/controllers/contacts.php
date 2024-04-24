@@ -1,0 +1,1 @@
+<?php require_once VIEWS . '/contacts.tpl.php';?>
